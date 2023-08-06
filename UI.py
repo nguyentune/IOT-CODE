@@ -82,7 +82,15 @@ ButtonOFF = tk.Button(text="TAT",
                                 font="Helvetica 60 bold")
 
 ButtonOFF.place(x=1000, y=400, width=350, height=100)
-  
+
+# def nut_nhan_1():
+#     print("ON")
+    
+# def nut_nhan_2():
+#     print("OFF")
+    
+# ButtonON.config(command=nut_nhan_1)
+# ButtonOFF.config(command=nut_nhan_2)    
 while True:
     window.update()
     time.sleep(0.1)
