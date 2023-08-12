@@ -3,8 +3,8 @@ print("Sensors and Actuators")
 import time
 import serial.tools.list_ports
 try:
-    ser = serial.Serial(port="COM6", baudrate=9600)
-    print("connected")
+    ser = serial.Serial(port = "/dev/ttyAMA2", baudrate = 9600)
+    print("Open COM successfully")
 except:
     print("Can not open the port") ,
 relay1_ON = [0,6,0,0,0,0,255,200,91]
