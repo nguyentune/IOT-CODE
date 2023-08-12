@@ -12,6 +12,18 @@ relay1_OFF =[0,6,0,0,0,0,136,27]
 
 relay2_ON = [15,6,0,0,0,255,200,164]
 relay2_OFF = [15,6,0,0,0,0,136,228]
+
+relay2_ON = [2,6,0,0,0,255,201,185]
+relay2_OFF = [2,6,0,0,0,0,137,249]
+
+relay3_ON = [3,6,0,0,0,255,200,104]
+relay3_OFF = [3,6,0,0,0,0,136,40]
+
+relay4_ON = [4,6,0,0,0,255,201,223]
+relay4_OFF = [4,6,0,0,0,0,137,159]
+
+relay5_ON = [5,6,0,0,0,255,200,14]
+relay5_OFF = [5,6,0,0,0,0,136,78]
 def setDevice1(state):
     if state == True:
         ser.write(relay1_ON)
@@ -64,3 +76,7 @@ def readMoisture():
 #     time.sleep(1)
 #     print(readTemperature())
 #     time.sleep(1)
+ser.write(relay1_ON)
+time.sleep(2)
+ser.write(relay1_OFF)
+time.sleep(2)
