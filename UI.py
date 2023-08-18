@@ -14,7 +14,7 @@ print("Size:", screen_width, screen_height)
 
 
 labelAMONIAValue = tk.Label(text="5.12",
-                                    fg="#0000ff",
+                                    fg="#FF0000",
                                     justify=CENTER,
                                     font="Helvetica 60 bold")
 
@@ -28,7 +28,7 @@ labelAMONIA = tk.Label(text="NH3",
 labelAMONIA.place(x=0, y=100, width=screen_width / 3, height=100) 
 
 labelTDSValue = tk.Label(text="20",
-                                 fg="#0000ff",
+                                 fg="#FF0000",
                                  justify=CENTER,
                                   #bg = "#333",
                                  font="Helvetica 60 bold")
@@ -44,7 +44,7 @@ labelTDS = tk.Label(text="TDS",
 labelTDS.place(x=screen_width / 3, y=100, width=screen_width / 3, height=100)
 
 labelPHValue = tk.Label(text="7.11",
-                                fg="#0000ff",
+                                fg="#FF0000",
                                 justify=CENTER,
                                 font="Helvetica 60 bold")
 
@@ -82,6 +82,18 @@ ButtonOFF = tk.Button(text="TAT",
                                 font="Helvetica 60 bold")
 
 ButtonOFF.place(x=1000, y=400, width=350, height=100)
+
+labelLED2 = tk.Label(text="LED2",
+                                fg="#33FF33",
+                                justify=CENTER,
+                                font="Geneva 60 bold")
+labelLED2.place(x=1000, y=500, width=350, height=100)
+
+labelLED1 = tk.Label(text="LED1",
+                                fg="#33FF33",
+                                justify=CENTER,
+                                font="Geneva 60 bold")
+labelLED1.place(x=200, y=500, width=350, height=100)
 
 # def nut_nhan_1():
 #     print("ON")
