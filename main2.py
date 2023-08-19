@@ -7,7 +7,7 @@ from Adafruit_IO import MQTTClient
 
 AIO_FEED_ID = ["button1","button2"]
 AIO_USERNAME = "nguyentu1402"
-AIO_KEY = "aio_QLTS638yGtVtkSakhUXhjWzsPjRM"
+AIO_KEY = "aio_RiUB13Yu7m2jib8G7Gnfe1yjUTLH"
 
 def connected(client):
     print("Ket noi thanh cong ...")
@@ -46,21 +46,21 @@ counter_sensor = 10
 sensor_type = 0
 
 
-# def bat():
-#     global client
-#     client.publish("button1", "1")
-
-# def tat():
-#     global client
-#     client.publish("button1", "0")
-    
 def bat():
     global client
-    client.publish("button2", "1")
+    client.publish("button1", "1")
 
 def tat():
     global client
-    client.publish("button2", "0")    
+    client.publish("button1", "0")
+    
+# def bat():
+#     global client
+#     client.publish("button2", "1")
+
+# def tat():
+#     global client
+#     client.publish("button2", "0")    
 
 ButtonON.config(command=bat)
 ButtonOFF.config(command=tat)

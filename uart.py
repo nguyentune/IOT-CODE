@@ -37,9 +37,9 @@ def readSerial(client):
                 mess = ""
             else:
                 mess = mess[end+1:]   
-# while True:
-#     readSerial()
-#     time.sleep(1)                 
+while True:
+    readSerial()
+    time.sleep(1)                 
 # while True:
 #     sendCommand("0");
 #     time.sleep(5)

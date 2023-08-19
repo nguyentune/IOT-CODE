@@ -8,7 +8,7 @@ from physical import *
 # Lấy id từ IO fruit
 AIO_FEED_ID = ["button1","button2"]
 AIO_USERNAME = "nguyentu1402"
-AIO_KEY = "aio_QLTS638yGtVtkSakhUXhjWzsPjRM"
+AIO_KEY = "aio_RiUB13Yu7m2jib8G7Gnfe1yjUTLH"
 
 def connected(client):
     print("Ket noi thanh cong ...")
@@ -110,5 +110,5 @@ while True:
         Temp = readTemperature()/100
         client.publish("sensor1",Temp)
 
-    #readSerial(client)
-    time.sleep(1)
+    # readSerial(client)
+    # time.sleep(1)

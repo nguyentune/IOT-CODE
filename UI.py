@@ -95,14 +95,14 @@ labelLED1 = tk.Label(text="LED1",
                                 font="Geneva 60 bold")
 labelLED1.place(x=200, y=500, width=350, height=100)
 
-# def nut_nhan_1():
-#     print("ON")
+def nut_nhan_1():
+    print("ON")
     
-# def nut_nhan_2():
-#     print("OFF")
+def nut_nhan_2():
+    print("OFF")
     
-# ButtonON.config(command=nut_nhan_1)
-# ButtonOFF.config(command=nut_nhan_2)    
-while True:
-    window.update()
-    time.sleep(0.1)
+ButtonON.config(command=nut_nhan_1)
+ButtonOFF.config(command=nut_nhan_2)    
+# while True:
+#     window.update()
+#     time.sleep(0.1)
